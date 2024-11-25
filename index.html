@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Second Project</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+
+    <!-- link Animation-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+        <!--other link-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container-fluid p-0 ">
+      <nav  id="navbar" class="navbar navbar-expand-lg fixed-top ">
+        <div class="container py-3  ">
+          <a href="" class="navbar-brand text-light fs-4 hover-txt "
+            ><i class="bi bi-github me-2"></i>Portfolio</a
+          >
+          <button class="navbar-toggler shadow-none border-0"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#Right"
+          >
+              <i class="bi bi-list-nested text-light fs-3"></i>
+          </button>
+          <div class="d-none d-lg-block">
+            <ul class="nav justify-content-center  hover-nav fs-4 suse-font">
+              <li><a href="" class="nav-link text-light hover-nav"><i class="bi bi-house-fill me-1"></i> Home</a></li>
+              <li><a href="" class="nav-link text-light hover-nav"><i class="bi bi-archive-fill me-1"></i> About  </a></li>
+              <li><a href="" class="nav-link text-light hover-nav"><i class="bi bi-projector me-1"></i> Project </a></li>
+              <li><a href="" class="nav-link text-light hover-nav"><i class="bi bi-browser-edge me-1"></i> Services</a></li>
+              <li><a href="" class="nav-link text-light hover-nav"><i class="bi bi-emoji-expressionless me-2"></i>Prettier</a></li>
+            </ul>
+          </div>
+          <div class="d-none d-lg-block">
+              <ul class="nav">
+                <button class="btn btn-outline-light rounded-5 fs-6 px-5 mx-5 me-1"><i class="bi bi-person-circle me-2"></i>Sign in </button>
+              </ul>
+          </div>
+        </div>
+      </nav>
+            <!--offcanvas!-->
+            <div class="offcanvas offcanvas-end bg-dark " id="Right">
+                <div class="offcanvas-header d-flex justify-content-between border-bottom">
+                    <a href="" class="fs-3 navbar-brand text-light fascinate-font">
+                        <i class="bi bi-camera-reels text-warning"></i>
+                        MVetec</a>
+                    <button class="btn" data-bs-dismiss="offcanvas">
+                        <i class="bi bi-x text-light fs-2"></i>
+                    </button>
+                </div>
+                <div class="offcanvas-body text-light p-0">
+                    <div class="d-flex border-bottom px-4">
+                        <div class="col-6">
+                            <ul class="list-unstyled">
+                                <li><a href="" class="nav-link text-light py-2 suse-font">HOME</a></li>
+                                <li><a href="" class="nav-link text-light py-2 suse-font">Movie</a></li>
+                                <li><a href="" class="nav-link text-light py-2 suse-font">Tv Show</a></li>
+                            </ul>
+                        </div
+                         b>
+                        <div class="col-6">
+                            <ul class="list-unstyled">
+                                <li><a href="" class="nav-link text-light py-2 suse-font">HOME</a></li>
+                                <li><a href="" class="nav-link text-light py-2 suse-font">Movie</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center px-2 border my-3">
+                        <i class="bi bi-search fs-4"></i>
+                        <input type="text" class="form-control bg-transparent border-0 shadow-none text-light" placeholder="Search...">
+                    </div>
+                    <div class="dropdown border-top p-4">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Language
+                        </button>
+                        <ul class="dropdown-menu text-light">
+                          <li><a class="dropdown-item " href="#">En</a></li>
+                          <li><a class="dropdown-item " href="#">KH</a></li>
+                        </ul>
+                        <ul class="navbar-nav pt-5 ">
+                            <li><a href="" class="nav-link text-light hover-txt "><i class="bi bi-facebook me-2 "></i>Facebook</a></li>
+                            <li><a href="" class="nav-link text-light hover-txt"><i class="bi bi-google   me-2"></i>Google</a></li>
+                            <li><a href="" class="nav-link text-light hover-txt"><i class="bi bi-youtube  me-2"></i>YouTube</a></li>
+                            <li><a href="" class="nav-link text-light hover-txt"><i class="bi bi-tiktok  me-2"></i>TikTok</a></li>
+                            <div class=" pt-3 d-grid  ">
+                                <button class="btn btn-outline-warning rounded-5 px-4 fs-3 ">Sign in</button>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>     
+      
+
+      <!----Main content---->
+      <main>
+        <div class="hero  ">
+          <div class="row container-fluid p-0">
+            <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-start" style="padding: 200px 60px">
+              <div class="suse-font ">
+                <h1 class="text-light mx-5 "> Hello There,</h1>
+                <h1 class="text-light mx-5"> I'm havert</h1>
+                <h3 class="py-2 mx-5 text-warning auto-type fs-2"></h3>
+                <p class="text-secondary m-5 mx-5 fs-5 text-light ">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+                  quidem nesciunt delectus adipisci consequatur in omnis aut
+                  dolore repellendus, aperiam, dolores praesentium quia
+                  laudantium atque commodi obcaecati eos! In, ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+                                   
+                </p>
+              </div>
+            </div>
+            <div 
+            data-aos="fade-up"
+            data-aos-delay="100"
+            class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end align-items-center">
+              <div  class="image">
+                <img src="Image/main New.webp" class="object-fit-cover">
+              </div>
+            </div>
+        </div>
+        
+        <!----Upcomnig-->
+        <div class="upcoming container-fluid p-0">
+            <div class="row container py-2">
+                <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-start">
+                    <div class="py-5 mx-5">
+                        <span class="text-warning auto-type fs-2 mx-5 suse-font">Let me introduct about myself</span></h1>
+                        <p class="text-light fs-5 py-3 mx-5 suse-font">My name is Sophea, and I'm from Prey Veng. Right now, I am 18 years old, studying Computer Science at the Royal University of Phnom Penh (RUPP) and learning a short course in web development at Etec Center with Teacher Handsome Smeey. I enjoy web development, and my favorite tool is Bootstrap because it makes website design simple and efficient. If you're interested in learning web development, Etec Center is a great place to start; the teachers are skilled, friendly, and always ready to help with any questions.</p>
+                    </div>
+                </div>
+                <div 
+                data-aos="fade-up"
+                data-aos-delay="100"
+                class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end align-items-center">
+                  <div class="about">
+                      <img src="/Image/pic tell aobut myself.webp">
+                  </div>
+                </div>
+                <div class="pt-4 text-center text-light d-grid mx-5">
+                  <h1 class="fw-bold ">you can find me on </h1>
+                  <p class="fs-4">Feel free to connect with me</p>
+                  <ul class="nav justify-content-center align-items-center text-uppercase ">
+                    <li><a href="#" class="hover-txt nav-link text-light  suse-font  fs-4"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="#" class="hover-txt nav-link text-light  suse-font  fs-4"><i class="bi bi-messenger"></i></a></li>
+                    <li><a href="#" class="hover-txt nav-link text-light  suse-font  fs-4"><i class="bi bi-tiktok"></i></a></li>
+                    <li><a href="#" class="hover-txt nav-link text-light  suse-font  fs-4"><i class="bi bi-telegram"></i></a></li>
+                    <li><a href="#" class="hover-txt nav-link text-light  suse-font  fs-4"><i class="bi bi-github"></i></a></li>
+                    <li><a href="#" class="hover-txt nav-link text-light  suse-font  fs-4"><i class="bi bi-instagram"></i></a></li>
+                </ul>
+                </div>
+            </div>
+            <!--Top rate HTML-->
+            <div class="top-rate container-fluid p-0  ">
+                <div class="container py-5 ">
+                    <div class=" text-center">
+                        <h1 class="text-light suse-font ">About my skill And My Knowledge</h1>
+                        <div class="mt-5">
+                            <button class="btn text-light border-0 bg-primary px-3 mx-md-4 fs-6 fw-bold">HTML 5</button>
+                            <button class="btn text-light border-0 bg-primary px-2 mx-md-4 fs-6 fw-bold">CSS 3</button>
+                            <button class="btn text-light border-0 bg-primary px-2 mx-md-4 fs-6 fw-bold">BOOTSTRAP</button>
+                            <button class="btn text-light border-0 bg-primary px-2 mx-md-4 fs-6 fw-bold">JAVASCRIPT</button>
+                        </div>
+                    </div>
+                    <div class="  row m-0 justify-content-start mb-5 py-5 ">
+                        <!--Card 1-->
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 px-3 my-4">
+                            <div 
+                            data-aos="fade-up"
+                            data-aos-delay="100"
+                            class="card border-0 overflow-hidden bg-transparent ">
+                                <div class="images bg-secondary">
+                                    <img src="Image/HTML SC.png" class="w-100 h-100 object-fit-cover">
+                                </div>
+                            <div class="card-body p-0 d-flex">
+                                <div class="col-6 suse-font py-3">
+                                    <button class="text-black btn border-0 bg-light suse-font px-4 rounded-2 fw-bold">HTML</button>
+                                </div>
+                                <div class="col-6 text-end py-3">
+                                    <button class="text-black btn border-0 bg-light suse-font px-4 rounded-2 fw-bold ">At Etec</button>
+                                </div>   
+                            </div>
+                        </div>
+                      </div>
+                      <!--Card 2-->
+                      <div class="col-12 col-md-6 col-lg-4 col-xl-3 px-3 my-4">
+                        <div 
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                        class="card border-0 overflow-hidden bg-transparent">
+                          <div class="images bg-secondary">
+                              <img src="Image/CSS new 3.jpeg" class="w-100 h-100 object-fit-cover">
+                          </div>
+                          <div class="card-body p-0 d-flex">
+                              <div class="col-6 suse-font py-3">
+                                  <button class="btn bg-light  fw-bold px-4 rounded-2 border-0 text-black">CSS</button>
+                              </div>
+                              <div class="col-6 text-end suse-font py-3">
+                                <button class="btn bg-light  fw-bold px-4 rounded-2 border-0 text-black">At Etec</button>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+
+                     <!--Card 3-->
+                     <div 
+                     data-aos="fade-up"
+                     data-aos-delay="100"
+                     class="col-12 col-md-6 col-xl-3 col-lg-4 px-3 my-4 ">
+                        <div class="card bg-transparent overflow-hidden ">
+                            <div class="images bg-secondary ">
+                                <img src="Image/Bootstrap.png" alt="" class="w-100 h-100 object-fit-cover">
+                            </div>
+                            <div class="card-body d-flex p-0">
+                                <div class="col-6 py-3">
+                                    <button class="btn text-black border-0 bg-light suse-font fw-bold px-4 rounded-2">BOOTSTRAP</button>
+                                </div>
+                                <div class="col-6 text-end py-3">
+                                  <button class="btn text-black border-0 bg-light suse-font fw-bold px-4 rounded-2">At Etec</button>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+
+                      <!--Card 4-->
+                     <div class="col-12 col-md-6 col-xl-3 col-lg-4 px-3 my-4">
+                        <div 
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                        class="card bg-transparent overflow-hidden">
+                            <div class="images bg-secondary ">
+                                <img src="Image/java-script.jpg" alt="" class="w-100 h-100 object-fit-cover">
+                            </div>
+                            <div class="card-body d-flex p-0">
+                                <div class="col-6 py-3">
+                                    <button class="btn text-black border-0 bg-light suse-font fw-bold px-4 rounded-2">JAVASCRIPT</button>
+                                </div>
+                                <div class="col-6 text-end py-3">
+                                  <button class="btn text-black border-0 bg-light suse-font fw-bold px-4 rounded-2">At Etec</button>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+
+                     <!--Card 4-->
+                     <div class="col-12 col-md-6 col-xl-3 col-lg-4 px-3 my-4">
+                      <div 
+                      data-aos="fade-up"
+                      data-aos-delay="100"
+                      class="card bg-transparent overflow-hidden">
+                          <div class="images bg-secondary ">
+                              <img src="Image/java-script.jpg" alt="" class="w-100 h-100 object-fit-cover">
+                          </div>
+                          <div class="card-body d-flex p-0">
+                              <div class="col-6 py-3">
+                                  <button class="btn text-black border-0 bg-light suse-font fw-bold px-4 rounded-2">JAVASCRIPT</button>
+                              </div>
+                              <div class="col-6 text-end py-3">
+                                <button class="btn text-black border-0 bg-light suse-font fw-bold px-4 rounded-2">At Etec</button>
+                              </div>
+                          </div>
+                      </div>
+                   </div>
+                   <!--Card 4-->
+                   <div class="col-12 col-md-6 col-xl-3 col-lg-4 px-3 my-4">
+                    <div 
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                    class="card bg-transparent overflow-hidden">
+                        <div class="images bg-secondary ">
+                            <img src="Image/Bootstrap.png" alt="" class="w-100 h-100 object-fit-cover">
+                        </div>
+                        <div class="card-body d-flex p-0">
+                            <div class="col-6 py-3">
+                                <button class="btn text-black border-0 bg-light suse-font fw-bold px-4 rounded-2">JAVASCRIPT</button>
+                            </div>
+                            <div class="col-6 text-end py-3">
+                              <button class="btn text-black border-0 bg-light suse-font fw-bold px-4 rounded-2">At Etec</button>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                 <!--Card 4-->
+                 <div class="col-12 col-md-6 col-xl-3 col-lg-4 px-3 my-4">
+                  <div 
+                  data-aos="fade-up"
+                  data-aos-delay="100"class="card bg-transparent overflow-hidden">
+                      <div class="images bg-secondary ">
+                          <img src="Image/CSS new 3.jpeg" alt="" class="w-100 h-100 object-fit-cover">
+                      </div>
+                      <div class="card-body d-flex p-0">
+                          <div class="col-6 py-3">
+                              <button class="btn text-black border-0 bg-light suse-font fw-bold px-4 rounded-2">JAVASCRIPT</button>
+                          </div>
+                          <div class="col-6 text-end py-3">
+                            <button class="btn text-black border-0 bg-light suse-font fw-bold px-4 rounded-2">At Etec</button>
+                          </div>
+                      </div>
+                  </div>
+               </div>
+               <!--Card 4-->
+               <div class="col-12 col-md-6 col-xl-3 col-lg-4 px-3 my-4">
+                <div 
+                data-aos="fade-up"
+                data-aos-delay="100"
+                class="card bg-transparent overflow-hidden">
+                    <div class="images bg-secondary ">
+                        <img src="Image/HTML SC.png" alt="" class="w-100 h-100 object-fit-cover">
+                    </div>
+                    <div class="card-body d-flex p-0">
+                        <div class="col-6 py-3">
+                            <button class="btn text-black border-0 bg-light suse-font fw-bold px-4 rounded-2">JAVASCRIPT</button>
+                        </div>
+                        <div class="col-6 text-end py-3">
+                          <button class="btn text-black border-0 bg-light suse-font fw-bold px-4 rounded-2">At Etec</button>
+                        </div>
+                    </div>
+                </div>
+             </div>
+                </div>
+            </div>
+        </div>
+      </main>
+      <footer class="footer  ">
+          <div class=" container-fluid p-0 ">
+              <div class="menu py-5 ">
+                    <div class="row">
+                       <!-- About Section -->
+                       <div class="col-12 col-md-4 ">
+                          <h3 class="text-light mx-4">About</h3>
+                          <ul class="list-unstyled mx-4 py-3">
+                              <li><a href="" class="text-light nav-link">Home</a></li>
+                              <li><a href="" class="text-light nav-link">Get in touch</a></li>
+                              <li><a href="" class="text-light nav-link">FAQs</a></li>
+                          </ul>
+                       </div>
+                       <!-- Product Section -->
+                       <div class="col-12 col-md-4">
+                          <h3 class="text-light mx-4">Product</h3>
+                          <ul class="list-unstyled py-3 mx-4">
+                            <li><a href="" class="text-light nav-link">Animation</a></li>
+                            <li><a href="" class="text-light nav-link">Technology</a></li>
+                            <li><a href="" class="text-light nav-link">Member Discount</a></li>
+                          </ul>
+                       </div>
+                       <div class="col-12 col-md-4">
+                          <h5 class="text-light mx-4">NOT QUITE READY FOR SAVVY?</h5>
+                          <P>Join our online no-code community for free. No spam. Ever.</P>
+                          <form class="d-flex">
+                            <input type="email" class="form-control me-2" placeholder="Ente you Email">
+                            <button class="btn subscribe-btn text-white me-5">Submit</button>
+                          </form>
+                       </div>
+                    </div>
+              </div>
+          </div>
+      </footer>
+    </div>
+</body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12?fbclid=IwY2xjawFzQ_dleHRuA2FlbQIxMAABHdaD9Yuofht86LWul9t5NT_PtnuBljPB6187Xhpc6ggKDMU-5w_bA-ecog_aem_FsZZIsKGDSLIIxG6pNMX1A"></script>
+    <script>
+          AOS.init();
+
+          // Apply Typed.js to all elements with the class 'auto-type'
+          document.querySelectorAll('.auto-type').forEach(function(element) {
+              new Typed(element, {
+                  strings: [ 'i am beginner  ',"Fortend developer at Etec center"],
+                  typeSpeed: 50, // Speed of typing
+                  backSpeed: 50, // Speed of backspacing
+                  backDelay: 1000, // Delay before it starts typing again
+                  loop: true, // Loop the typing effect
+              });
+          });
+
+          const navbar = document.querySelector("#navbar");   
+          navbar.style.padding ="5px 0";
+          window.onscroll =  function (e) {
+              const scrolvalue = window.scrollY;
+              console.log(scrolvalue);
+
+              var scroll = 120;
+              if(window.scrollY >= scroll){
+                  navbar.style.backgroundColor ="#28282B ";
+                  navbar.style.padding ="5px 0";
+                  navbar.style.transition ="0.2s";
+              }
+              else if(window.scrollY < scroll){
+            navbar.style.backgroundColor ="transparent";
+            navbar.style.padding ="5px 0";
+            navbar.style.transition ="0.2s";
+        }
+    }
+    </script>
+
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+    </style>
+</html>

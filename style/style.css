@@ -1,0 +1,120 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=SUSE:wght@100..800&display=swap');
+
+    .container{
+        width: 100%;
+        box-sizing: border-box;
+
+    }
+    .fascinate-font{
+        font-family: "Fascinate Inline", system-ui;
+    }
+    .suse-font{
+        font-family: "SUSE", system-ui;
+    }
+    main .hero{
+        width: 100%;
+        background-color: rgb(20, 34, 56);
+    }
+    main .image {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+    }
+
+    main .about{
+        width: 400px
+       
+    }
+    .hover-txt:hover{
+        color:black!important;
+        background-color: white !important;
+        border-radius: 50px;
+    }
+
+    .hover-nav:hover{
+        color: yellow !important;
+    }
+    main .upcoming{
+        width: 100%;
+        background-color: rgb(2, 12, 22);
+    }
+    /*--------Animatio  Auto-type---------*/
+    @keyframes slideInFromLeft {
+        0% {
+        transform: translateX(-100%); /* Start off screen to the left */
+        opacity: 0; /* Start invisible */
+        }
+        100% {
+        transform: translateX(0); /* End at normal position */
+        opacity: 1; /* Fully visible */
+        }
+    }
+    
+    /* Apply the animation to the elements with the .auto-type class */
+    .auto-type {
+        display: inline-block;
+        animation: slideInFromRight 2s ease-out; /* Adjust timing as needed */
+    }
+    
+
+    /*--------Footer style---------*/
+    footer .menu{
+        width: 100%;
+        background-color: rgb(20, 34, 56);
+    }
+    .subscribe-btn {
+        background-color: #7f5af0;
+        border: none;
+    
+    }
+    .footer a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+    .footer a:hover {
+        color: #d1d1e9;
+    }
+
+    /*--------top-rate---------*/
+    .top-rate{
+        width: 100%;
+        background-color: rgb(2, 12, 22);
+    }
+    .card .images{
+        height: 450px;
+    }
+
+    .overflow-x-scroll::-webkit-scrollbar{
+        height: 8px;
+    }
+    .overflow-x-scroll::-webkit-scrollbar-thumb{
+        background-color: yellow;
+        border-radius: 16px;
+    }
+    .overflow-x-scroll::-webkit-scrollbar-track{
+        background-color: gray;
+        border-radius: 16px;
+    }
+    @media (min-width: 1200px){
+        .overflow-x-scroll{
+            overflow-x: hidden !important;
+           
+        }
+    }
+    /*--------Offcanvas Reponsive---------*/
+@media (max-width: 576px){
+    .offcanvas{
+        width: 80% !important;
+    }
+}
+   
+@media (max-width: 768px) {
+    .suse-font {
+        font-size: 1.5rem;
+    }
+    .fascinate-font {
+        font-size: 1.5rem;
+    }
+}
+
